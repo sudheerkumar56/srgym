@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assests/register.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: antiquewhite;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-y: auto;
+    gap: 20px;
+}
+
+.container h1 {
+    font-size: 1.5em;
+    text-align: center;
+    color: red; 
+    padding-bottom: 10px;
+}
+
+.container h1 span{
+    color: aliceblue;
+}
+
+.container .personal,
+.container .emergency,
+.container .details{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container .emergency{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container .personal input[type="text"],
+.container .personal input[type="date"],
+.container .personal input[type="number"],
+.container .personal input[type="email"],
+.container select,
+.container .emergency input[type="text"],
+.container .emergency input[type="number"],
+.container .emergency select
+{
+    padding: 10px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    outline: none;
+}
+
+.container  .option-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: antiquewhite;
+}
+.container label {
+    font-size: 20px;
+    gap: 10px;
+}
+
+.container .emergency select{
+    color: darkgrey;
+    background-color: black;
+}
+
+.container .button {
+    display: flex;
+    justify-content: center;
+}
+
+.container .button button {
+    padding: 10px;
+    background-color: aqua;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container .button button a{
+text-decoration: none;
+}
+.container .button button:hover{
+    background-color: gray;
+}
+

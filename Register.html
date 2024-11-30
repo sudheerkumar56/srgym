@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="rstyle.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="personal">
+            <h1>Personal <span>Information</span></h1>
+            <label>Full Name:</label>
+            <input type="text">
+            <label>Date of Birth:</label>
+            <input type="date" name="date" id="d1">
+            <label>Gender:</label>
+            <div class="option-group">
+                Male: <input type="radio" name="Gender" value="Male">
+                Female: <input type="radio" name="Gender" value="Female">
+            </div>
+            <label>Shift Timing:</label>
+            <div class="option-group">
+                Morning: <input type="radio" name="Shift" value="Morning">
+                Evening: <input type="radio" name="Shift" value="Evening">
+            </div>
+            <label>Address:</label>
+            <input type="text">
+            <label>Phone Number:</label>
+            <input type="number">
+            <label>Email:</label>
+            <input type="email">
+        </div>
+
+        <!-- --------------------emergency------------------ -->
+
+        <div class="emergency">
+            <h1>Emergency Contact <span>Information</span></h1>
+            <label>Contact Name:</label>
+            <input type="text">
+            <label>Relationship:</label>
+            <select>
+                <option value="Select">Select</option>
+                <option value="Father">Father</option>
+                <option value="Mother">Mother</option>
+                <option value="Brother">Brother</option> 
+            </select>
+            <label>Phone Number:</label>
+            <input type="number"> 
+        </div>
+
+         <!-- ----------------------details-------------- -->
+
+        <div class="details">
+            <h1>Membership <span>Details</span></h1>
+            <label>Please indicate the type of membership you require:</label>
+            <div class="option-group">
+                Adult: <input type="radio" name="membership" value="Adult">
+                Student: <input type="radio" name="membership" value="Student">
+                Family: <input type="radio" name="membership" value="Family">
+                Couple: <input type="radio" name="membership" value="Couple">
+            </div>
+            <label>Membership Duration:</label>
+            <div class="option-group">
+                Monthly: <input type="radio" name="duration" value="Monthly">
+                Quarterly: <input type="radio" name="duration" value="Quarterly">
+                Yearly: <input type="radio" name="duration" value="Yearly">
+            </div>
+        </div>
+
+        <div class="button">
+            <button><a href="login.html">Submit</a></button>
+        </div>
+    </div>
+</body>
+</html>
