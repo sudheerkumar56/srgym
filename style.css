@@ -467,3 +467,72 @@ html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 768px) {
+    .first nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu a {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .first .content {
+        flex-direction: column;
+    }
+
+    .first .content .head {
+        width: 90%;
+    }
+
+    .first .content .image {
+        width: 90%;
+    }
+
+    .second .services {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .im, .about .aboutus {
+        width: 100%;
+    }
+
+    .about .aboutus h1 {
+        font-size: 24px;
+    }
+
+    .about .aboutus p {
+        font-size: 16px;
+    }
+
+    .plans .budget {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plans .budget div {
+        width: 90%;
+    }
+
+    .testimonial {
+        flex-direction: column;
+    }
+
+    .testimonial .box1, .testimonial .box2, .testimonial .box3 {
+        width: 90%;
+    }
+
+    .social a img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
