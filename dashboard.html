@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="dstyle.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SR Fitness Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
 </head>
 <body>
-    
+  <nav>
+    <div class="logo">SR <span>Fitness</span></div>
+    <div class="menu">
+      <a href="#">Dashboard</a>
+      <a href="#">Profile</a>
+      <a href="#">Schedule</a>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="welcome">
+      <h2>Welcome, <span id="userName"></span>!</h2>
+      <p>Your membership is active. Here's your dashboard to track your fitness journey.</p>
+    </section>
+
+    <section class="dashboard-container">
+      <div class="card">
+        <h3>Membership Details</h3>
+        <p>Type: <span id="membershipType"></span></p>
+        <p>Duration: <span id="membershipDuration"></span></p>
+        <p>Status: <span id="status" style="color:green;"></span></p>
+        <p>Next Payment: <span id="nextPayment"></span></p>
+      </div>
+
+      <div class="card">
+        <h3>Upcoming Classes</h3>
+        <ul>
+          <li>Strength Training - Monday, 6:00 PM <span class="booked">Booked</span></li>
+          <li>Cardio Blast - Wednesday, 7:00 PM <span class="booked">Booked</span></li>
+          <li>Yoga - Friday, 5:30 PM <button class="book-btn">Book</button></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Fitness Progress</h3>
+        <p>Attendance: <progress value="8" max="100"></progress> 8%</p>
+        <p>Weight Goal: <progress value="65" max="100"></progress> 65%</p>
+        <p>Strength: <progress value="70" max="100"></progress> 70%</p>
+      </div>
+    </section>
+
+    <section class="extra">
+      <div class="card">
+        <h3>Announcements</h3>
+        <p><strong>New Classes Added!</strong><br>HIIT and Pilates now available.</p>
+        <p><strong>Holiday Hours</strong><br>Check our adjusted schedule.</p>
+        <p><strong>New Equipment</strong><br>New squat racks and cardio machines.</p>
+      </div>
+
+      <div class="card">
+        <h3>Quick Actions</h3>
+        <button>Book Class</button>
+        <button>Personal Trainer</button>
+        <button>Billing</button>
+        <button>Support</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const user = JSON.parse(localStorage.getItem("loggedInUser"));
+
+    if (!user) {
+      window.location.href = "login.html";
+    } else {
+      document.getElementById("userName").textContent = user.fullName;
+      document.getElementById("membershipType").textContent = user.membership;
+      document.getElementById("membershipDuration").textContent = user.duration;
+      document.getElementById("status").textContent = user.status;
+      document.getElementById("nextPayment").textContent = user.nextPayment;
+    }
+
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      localStorage.removeItem("loggedInUser");
+      window.location.href = "index.html";
+    });
+  </script>
 </body>
 </html>

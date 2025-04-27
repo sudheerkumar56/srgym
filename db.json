@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "id": "8ec2",
+      "fullName": "df",
+      "dob": "2025-04-22",
+      "gender": "Male",
+      "shift": "Morning",
+      "address": "Morning",
+      "phone": "Evening",
+      "email": "1-22/295 , Sri ram nagar colony",
+      "emergencyName": "1236547896",
+      "relationship": "Father",
+      "emergencyPhone": "hhh",
+      "membershipType": "Adult",
+      "duration": "Monthly"
+    },
+    {
+      "id": "4fde",
+      "fullName": "BELLAMKONDA VENKATA SUDHEER KUMAR",
+      "dob": "2025-04-22",
+      "gender": "Male",
+      "shift": "Morning",
+      "address": "1-22/295 , Sri ram nagar colony",
+      "phoneNumber": "9949781361",
+      "email": "Sudheer984914@gmail.com",
+      "password": "er",
+      "emergencyContactName": "sd",
+      "emergencyRelationship": "Father",
+      "emergencyPhone": "7894569632",
+      "membership": "Adult",
+      "duration": "Monthly"
+    },
+    {
+      "id": "29f1",
+      "fullName": "BELLAMKONDA VENKATA SUDHEER KUMAR",
+      "dob": "2025-04-22",
+      "gender": "Male",
+      "shift": "Morning",
+      "address": "1-22/295 , Sri ram nagar colony",
+      "phoneNumber": "9949781263",
+      "email": "Sudheer984914@gmail.com",
+      "password": "qwerty",
+      "emergencyContactName": "fg",
+      "emergencyRelationship": "Father",
+      "emergencyPhone": "4569871236",
+      "membership": "Adult",
+      "duration": "Monthly"
+    },
+    {
+      "id": "8de6",
+      "fullName": "sudheer",
+      "dob": "2025-04-22",
+      "email": "Sudheer984914@gmail.com",
+      "password": "qwerty"
+    },
+    {
+      "id": "380c",
+      "fullName": "BELLAMKONDA VENKATA SUDHEER KUMAR",
+      "dob": "2025-04-10",
+      "email": "20r21a05j3@gmail.com",
+      "password": "qwerty"
+    },
+    {
+      "id": "5b11",
+      "fullName": "BELLAMKONDA VENKATA SUDHEER KUMAR",
+      "dob": "2025-04-10",
+      "email": "20r21a05j3@mlrinstitutions.ac.in",
+      "password": "qwerty"
+    },
+    {
+      "id": "6f7e",
+      "fullName": "ajay",
+      "dob": "2025-04-20",
+      "email": "ajay@gmail.com",
+      "password": "qwerty"
+    },
+    {
+      "id": "b734",
+      "fullName": "manoj",
+      "dob": "2025-04-26",
+      "email": "baa@gmail.com",
+      "password": "qwerty"
+    },
+    {
+      "id": "6675",
+      "fullName": "shyam",
+      "dob": "2007-04-05",
+      "gender": "Male",
+      "shift": "Morning",
+      "address": "1-22/295 , Sri ram nagar colony",
+      "phone": "6309530397",
+      "email": "s@gmail.com",
+      "password": "Qwerty56",
+      "emergencyName": "we",
+      "relationship": "Mother",
+      "emergencyPhone": "1265478963",
+      "membership": "Standard",
+      "duration": "Monthly",
+      "joinDate": "2025-04-23",
+      "status": "Active",
+      "nextPayment": "2025-05-23"
+    },
+    {
+      "id": "8378",
+      "fullName": "aum",
+      "dob": "2007-04-19",
+      "gender": "Male",
+      "shift": "Evening",
+      "address": "1-22/295 , Sri ram nagar colony",
+      "phone": "9949781361",
+      "email": "aum@gmail.com",
+      "password": "Qwerty56",
+      "emergencyName": "suna",
+      "relationship": "Spouse",
+      "emergencyPhone": "7896325412",
+      "membership": "Student",
+      "duration": "Monthly",
+      "joinDate": "2025-04-23",
+      "status": "Active",
+      "nextPayment": "2025-05-23"
+    }
+  ]
+}
